@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Abuelita Linda Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Abuelita Linda: Mexican Foods</h1>
+   <div class="lang-switch">
+  <button onclick="setLanguage('es')">ES</button>
+  <button onclick="setLanguage('en')">EN</button>
+</div>
+</header>
+
+<nav>
+  <a href="index.html" data-lang="es">Inicio</a>
+  <a href="index.html" data-lang="en">Home</a>
+  <a href="recetas.html" data-lang="es">Recetas</a>
+  <a href="recetas.html" data-lang="en">Recipes</a>
+  <a href="ingredientes.html" data-lang="es">Ingredientes</a>
+  <a href="ingredientes.html" data-lang="en">Ingredients</a>
+  <a href="bebidas.html" data-lang="es">Bebidas</a>
+  <a href="bebidas.html" data-lang="en">Drinks</a>
+  <a href="dulces.html" data-lang="es">Dulces & Snacks</a>
+  <a href="dulces.html" data-lang="en">Sweets & Snacks</a>
+</nav>
+
+<main>
+  <section class="card">
+    <h2 data-lang="es">Sobre Abuelita Linda</h2>
+    <h2 data-lang="en">About Abuelita Linda</h2>
+    <p data-lang="es">
+      Este mod agrega platillos, bebidas y dulces tradicionales de México
+      a Project Zomboid.
+    </p>
+    <p data-lang="en">
+      This mod adds traditional Mexican dishes, drinks, and sweets to
+      Project Zomboid.
+    </p>
+    <img src="poster.png" alt="Abuelita Linda" style="max-width: 200px;">
+  </section>
+</main>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll("[data-lang]").forEach(el => {
+    el.hidden = el.getAttribute("data-lang") !== lang;
+  });
+
+  localStorage.setItem("wikiLang", lang);
+}
+
+const savedLang = localStorage.getItem("wikiLang") || "es";
+setLanguage(savedLang);
+</script>
+
+
+
+</body>
+</html>

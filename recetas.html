@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Abuelita Linda Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Abuelita Linda: Mexican Foods</h1>
+   <div class="lang-switch">
+  <button onclick="setLanguage('es')">ES</button>
+  <button onclick="setLanguage('en')">EN</button>
+</div>
+</header>
+
+<nav>
+  <a href="index.html" data-lang="es">Inicio</a>
+  <a href="index.html" data-lang="en">Home</a>
+  <a href="recetas.html" data-lang="es">Recetas</a>
+  <a href="recetas.html" data-lang="en">Recipes</a>
+  <a href="ingredientes.html" data-lang="es">Ingredientes</a>
+  <a href="ingredientes.html" data-lang="en">Ingredients</a>
+  <a href="bebidas.html" data-lang="es">Bebidas</a>
+  <a href="bebidas.html" data-lang="en">Drinks</a>
+  <a href="dulces.html" data-lang="es">Dulces & Snacks</a>
+  <a href="dulces.html" data-lang="en">Sweets & Snacks</a>
+</nav>
+
+<main>
+
+  <div class="filter-bar">
+  <label data-lang="es" for="bookFilter">Filtrar por libro:</label>
+  <label data-lang="en" for="bookFilter">Filter by book:</label>
+  <select id="bookFilter" onchange="filterByBook()">
+    <option data-lang="es" value="all">Todos</option>
+    <option data-lang="en" value="all">All</option>
+    <option data-lang="es" value="vol1">Recetas mexicanas (Volumen 1)</option>
+    <option data-lang="en" value="vol1">Mexican Recipes (Volume 1)</option>
+    <option data-lang="es" value="vol2">Recetas mexicanas (Volumen 2)</option>
+    <option data-lang="en" value="vol2">Mexican Recipes (Volume 2)</option>
+    <option data-lang="es" value="vol3">Recetas mexicanas (Volumen 3)</option>
+    <option data-lang="en" value="vol3">Mexican Recipes (Volume 3)</option>
+    <option data-lang="es" value="dulces">Postres mexicanos</option>
+    <option data-lang="en" value="dulces">Mexican Desserts</option>
+    <option data-lang="es" value="tamales">Cómo hacer tamales</option>
+    <option data-lang="en" value="tamales">How to Make Tamales</option>
+    <option data-lang="es" value="mary">La receta secreta de Mary</option>
+    <option data-lang="en" value="mary">Mary's Secret Recipe</option>
+  </select>
+</div>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/SalsaRoja.gif" alt="Salsa Roja" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Salsa Roja</h2>
+  <h2 data-lang="en">Red Salsa</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">3 tomates</li>
+    <li data-lang="en">3 tomatoes</li>
+    <li data-lang="es">2 usos de cebolla</li>
+    <li data-lang="en">2 uses of onion</li>
+    <li data-lang="es">Sal</li>
+    <li data-lang="en">Salt</li>
+    <li data-lang="es">Ajo</li>
+    <li data-lang="en">Garlic</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Cacerola con agua</li>
+    <li data-lang="en">Saucepan with water</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -5</li>
+    <li>Unhappy: -8</li>
+    <li>Calories: 35</li>
+    <li>Carbs: 7</li>
+    <li>Lipids: 0.5</li>
+    <li>Proteins: 1</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/SalsaVerde.gif" alt="Salsa Verde" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Salsa Verde</h2>
+  <h2 data-lang="en">Green Salsa</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">3 tomates verdes</li>
+    <li data-lang="en">3 green tomatoes</li>
+    <li data-lang="es">2 usos de cebolla</li>
+    <li data-lang="en">2 uses of onion</li>
+    <li data-lang="es">Sal</li>
+    <li data-lang="en">Salt</li>
+    <li data-lang="es">Ajo</li>
+    <li data-lang="en">Garlic</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Cacerola con agua</li>
+    <li data-lang="en">Saucepan with water</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -5</li>
+    <li>Unhappy: -8</li>
+    <li>Calories: 35</li>
+    <li>Carbs: 7</li>
+    <li>Lipids: 0.5</li>
+    <li>Proteins: 1</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/ChilaquilesRojos.gif" alt="Chilaquiles Rojos" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Chilaquiles Rojos</h2>
+  <h2 data-lang="en">Red Chilaquiles</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Salsa roja</li>
+    <li data-lang="en">Red salsa</li>
+    <li data-lang="es">2 Tortillas</li>
+    <li data-lang="en">2 Tortilla chips</li>
+    <li data-lang="es">Plato</li>
+    <li data-lang="en">Plate</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 420</li>
+    <li>Carbs: 45</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 18</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/ChilaquilesVerdes.gif" alt="Chilaquiles Verdes" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Chilaquiles Verdes</h2>
+  <h2 data-lang="en">Green Chilaquiles</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Salsa verde</li>
+    <li data-lang="en">Green salsa</li>
+    <li data-lang="es">2 Tortillas</li>
+    <li data-lang="en">2 Tortilla chips</li>
+    <li data-lang="es">Plato</li>
+    <li data-lang="en">Plate</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 420</li>
+    <li>Carbs: 45</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 18</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CoctelElote.gif" alt="Coctel de elote" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Coctel de elote</h2>
+  <h2 data-lang="en">Boiled Corn</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">5 elotes</li>
+    <li data-lang="en">5 corn</li>
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -35</li>
+    <li>Unhappy: -12</li>
+    <li>Calories: 350</li>
+    <li>Carbs: 78</li>
+    <li>Lipids: 4</li>
+    <li>Proteins: 12</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/EnchiladasRojas.gif" alt="Enchiladas Rojas" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Enchiladas Rojas</h2>
+  <h2 data-lang="en">Red Enchiladas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">3 tortillas</li>
+    <li data-lang="en">3 tortillas</li>
+    <li data-lang="es">1 pollo cocinado</li>
+    <li data-lang="en">1 cooked chicken</li>
+    <li data-lang="es">Salsa roja</li>
+    <li data-lang="en">Red salsa</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 500</li>
+    <li>Carbs: 40</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 28</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/EnchiladasSuizas.gif" alt="Enchiladas Suizas" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Enchiladas Suizas</h2>
+  <h2 data-lang="en">Swiss Enchiladas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">3 tortillas</li>
+    <li data-lang="en">3 tortillas</li>
+    <li data-lang="es">1 pollo cocinado</li>
+    <li data-lang="en">1 cooked chicken</li>
+    <li data-lang="es">Salsa verde</li>
+    <li data-lang="en">Green salsa</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 500</li>
+    <li>Carbs: 40</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 28</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/FrijolesCharros.gif" alt="Frijoles Charros" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Frijoles Charros</h2>
+  <h2 data-lang="en">Charro Beans</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla</li>
+    <li data-lang="en">Pot</li>
+    <li data-lang="es">3 Frijoles</li>
+    <li data-lang="en">3 Tinned Beans</li>
+    <li data-lang="es">3 tocino</li>
+    <li data-lang="en">3 bacon</li>
+    <li data-lang="es">2 salchichas</li>
+    <li data-lang="en">2 sausages</li>
+    <li data-lang="es">1 tomate</li>
+    <li data-lang="en">1 tomato</li>
+    <li data-lang="es">1 cebolla</li>
+    <li data-lang="en">1 onion</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 410</li>
+    <li>Carbs: 28</li>
+    <li>Lipids: 20</li>
+    <li>Proteins: 25</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CaldoTlalpeno.gif" alt="Caldo Tlalpeño" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Caldo Tlalpeño</h2>
+  <h2 data-lang="en">Tlalpeno Soup</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">1 tomate</li>
+    <li data-lang="en">1 tomato</li>
+    <li data-lang="es">2 pollos</li>
+    <li data-lang="en">2 chicken</li>
+    <li data-lang="es">1 tortillas</li>
+    <li data-lang="en">1 tortillas</li>
+    <li data-lang="es">1 aguacate</li>
+    <li data-lang="en">1 avocado</li>
+    <li data-lang="es">1 queso</li>
+    <li data-lang="en">1 cheese</li>
+    <li data-lang="es">2 usos de chipotle</li>
+    <li data-lang="en">2 uses of chipotle</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -15</li>
+    <li>Calories: 320</li>
+    <li>Carbs: 25</li>
+    <li>Lipids: 10</li>
+    <li>Proteins: 25</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol1">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/TostadasTinga.gif" alt="Tostadas de tinga" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Tostadas de tinga</h2>
+  <h2 data-lang="en">Tinga Toasts</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 1)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 1)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Plato</li>
+    <li data-lang="en">Plate</li>
+    <li data-lang="es">2 usos de tomate</li>
+    <li data-lang="en">2 uses of tomato</li>
+    <li data-lang="es">1 pollo cocinado</li>
+    <li data-lang="en">1 cooked chicken</li>
+    <li data-lang="es">2 tortillas</li>
+    <li data-lang="en">2 tortillas</li>
+    <li data-lang="es">2 usos de chipotle</li>
+    <li data-lang="en">2 uses of chipotle</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -40</li>
+    <li>Unhappy: -15</li>
+    <li>Calories: 390</li>
+    <li>Carbs: 35</li>
+    <li>Lipids: 16</li>
+    <li>Proteins: 22</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/FajitasPollo.gif" alt="Fajitas de pollo" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Fajitas de pollo</h2>
+  <h2 data-lang="en">Chicken Fajitas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">3 pollos</li>
+    <li data-lang="en">3 chicken</li>
+    <li data-lang="es">2 usos de cebolla</li>
+    <li data-lang="en">2 uses of onion</li>
+    <li data-lang="es">Ajo</li>
+    <li data-lang="en">Garlic</li>
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 380</li>
+    <li>Carbs: 10</li>
+    <li>Lipids: 20</li>
+    <li>Proteins: 35</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/FajitasRes.gif" alt="Fajitas de res" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Fajitas de res</h2>
+  <h2 data-lang="en">Beef Fajitas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">3 carnes</li>
+    <li data-lang="en">3 beef</li>
+    <li data-lang="es">2 usos de cebolla</li>
+    <li data-lang="en">2 uses of onion</li>
+    <li data-lang="es">Ajo</li>
+    <li data-lang="en">Garlic</li>
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 420</li>
+    <li>Carbs: 8</li>
+    <li>Lipids: 24</li>
+    <li>Proteins: 38</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CaldoQueso.gif" alt="Caldo de queso" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Caldo de queso</h2>
+  <h2 data-lang="en">Cheese Soup</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">1 tomate</li>
+    <li data-lang="en">1 tomato</li>
+    <li data-lang="es">1 queso</li>
+    <li data-lang="en">1 cheese</li>
+    <li data-lang="es">1 cebolla</li>
+    <li data-lang="en">1 onion</li>
+    <li data-lang="es">1 papa</li>
+    <li data-lang="en">1 potato</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 410</li>
+    <li>Carbs: 28</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 18</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Mole.gif" alt="Mole" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Mole</h2>
+  <h2 data-lang="en">Mole</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Olla</li>
+    <li data-lang="en">Pot</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">3 pollos</li>
+    <li data-lang="en">3 chicken</li>
+    <li data-lang="es">2 usos de barra de chocolate (Abuelita Linda)</li>
+    <li data-lang="en">2 uses of chocolate bar (Abuelita Linda)</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -60</li>
+    <li>Unhappy: -35</li>
+    <li>Calories: 680</li>
+    <li>Carbs: 55</li>
+    <li>Lipids: 35</li>
+    <li>Proteins: 30</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/EnchiladasRojas.gif" alt="Tacos Dorados" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Tacos Dorados</h2>
+  <h2 data-lang="en">Golden Tacos</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+ 
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">2 pollos</li>
+    <li data-lang="en">2 chicken</li>
+    <li data-lang="es">3 tortillas</li>
+    <li data-lang="en">3 tortillas</li>
+    <li data-lang="es">Crema ácida</li>
+    <li data-lang="en">Sour Cream</li>  
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -40</li>
+    <li>Unhappy: -15</li>
+    <li>Calories: 380</li>
+    <li>Carbs: 25</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 20</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CochinitaPibil.gif" alt="Cochinita Pibil" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Cochinita Pibil</h2>
+  <h2 data-lang="en">Cochinita Pibil</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla</li>
+    <li data-lang="en">Pot</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">3 puerco</li>
+    <li data-lang="en">3 pork</li>
+    <li data-lang="es">3 naranjas</li>
+    <li data-lang="en">3 oranges</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -60</li>
+    <li>Unhappy: -30</li>
+    <li>Calories: 700</li>
+    <li>Carbs: 45</li>
+    <li>Lipids: 40</li>
+    <li>Proteins: 35</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Sopes.gif" alt="Sopes" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Sopes</h2>
+  <h2 data-lang="en">Sopes</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">2 salchichas</li>
+    <li data-lang="en">2 sausages</li>
+    <li data-lang="es">2 usos de papa</li>
+    <li data-lang="en">2 uses of potato</li>
+    <li data-lang="es">Crema ácida</li>
+    <li data-lang="en">Sour Cream</li>
+    <li data-lang="es">Masa</li>
+    <li data-lang="en">Dough</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -35</li>
+    <li>Unhappy: -10</li>
+    <li>Calories: 380</li>
+    <li>Carbs: 40</li>
+    <li>Lipids: 18</li>
+    <li>Proteins: 15</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol2">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Gorditas.gif" alt="Gorditas" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Gorditas</h2>
+  <h2 data-lang="en">Gorditas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 2)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 2)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">1 puerco</li>
+    <li data-lang="en">1 pork</li>
+    <li data-lang="es">Masa</li>
+    <li data-lang="en">Dough</li>
+    <li data-lang="es">Manteca</li>
+    <li data-lang="en">Lard</li>
+    <li data-lang="es">1 huevo</li>
+    <li data-lang="en">1 Egg</li>
+    <li data-lang="es">1 Frijoles enlatados</li>
+    <li data-lang="en">1 Tinned Beans</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -35</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 380</li>
+    <li>Carbs: 30</li>
+    <li>Lipids: 20</li>
+    <li>Proteins: 12</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol3">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CochinitaPibil.gif" alt="Pozole" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Pozole</h2>
+  <h2 data-lang="en">Pozole</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 3)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 3)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">3 puerco</li>
+    <li data-lang="en">3 pork</li>
+    <li data-lang="es">2 elotes</li>
+    <li data-lang="en">2 corn</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -60</li>
+    <li>Unhappy: -30</li>
+    <li>Calories: 550</li>
+    <li>Carbs: 50</li>
+    <li>Lipids: 25</li>
+    <li>Proteins: 30</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol3">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CoctelElote.gif" alt="Menudo" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Menudo</h2>
+  <h2 data-lang="en">Menudo</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 3)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 3)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">3 pancitas</li>
+    <li data-lang="en">3 beef tripe</li>
+    <li data-lang="es">2 elotes</li>
+    <li data-lang="en">2 corn</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -55</li>
+    <li>Unhappy: -25</li>
+    <li>Calories: 550</li>
+    <li>Carbs: 25</li>
+    <li>Lipids: 30</li>
+    <li>Proteins: 45</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol3">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/FrijolesCharros.gif" alt="Gallina Pinta" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Gallina Pinta</h2>
+  <h2 data-lang="en">Gallina Pinta</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 3)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 3)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Olla con agua</li>
+    <li data-lang="en">Pot with water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">3 carnes</li>
+    <li data-lang="en">3 beef</li>
+    <li data-lang="es">2 elotes</li>
+    <li data-lang="en">2 corn</li>
+    <li data-lang="es">1 Frijoles enlatados</li>
+    <li data-lang="en">1 tinned beans</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -12</li>
+    <li>Calories: 420</li>
+    <li>Carbs: 28</li>
+    <li>Lipids: 15</li>
+    <li>Proteins: 38</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol3">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/ChilesRellenos.gif" alt="Chiles Rellenos" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Chiles Rellenos</h2>
+  <h2 data-lang="en">Stuffed Chiles</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 3)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 3)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">2 huevos</li>
+    <li data-lang="en">2 eggs</li>
+    <li data-lang="es">2 usos de queso</li>
+    <li data-lang="en">2 uses of cheese</li>
+    <li data-lang="es">2 chiles poblanos</li>
+    <li data-lang="en">2 poblano chiles</li>
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -25</li>
+    <li>Calories: 470</li>
+    <li>Carbs: 25</li>
+    <li>Lipids: 30</li>
+    <li>Proteins: 20</li>
+  </ul>
+</section>
+
+<section class="card" data-book="vol3">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Chivichangas.gif" alt="Chivichangas" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Chivichangas</h2>
+  <h2 data-lang="en">Chivichangas</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Recetas mexicanas (Volumen 3)</p>
+  <p data-lang="en"><strong>Book:</strong> Mexican Recipes (Volume 3)</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+    <li data-lang="es">3 tortillas</li>
+    <li data-lang="en">3 tortillas</li>
+    <li data-lang="es">1 carne</li>
+    <li data-lang="en">1 beef</li>
+    <li data-lang="es">2 usos de queso</li>
+    <li data-lang="en">2 uses of cheese</li>
+    <li data-lang="es">1 frijoles enlatados</li>
+    <li data-lang="en">1 tinned beans</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 520</li>
+    <li>Carbs: 38</li>
+    <li>Lipids: 28</li>
+    <li>Proteins: 26</li>
+  </ul>
+</section>
+
+<section class="card" data-book="tamales">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/TamalElote.png" alt="Tamal Elote" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Tamal Elote</h2>
+  <h2 data-lang="en">Corn Tamale</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Cómo hacer tamales</p>
+  <p data-lang="en"><strong>Book:</strong> How to Make Tamales</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Masa</li>
+    <li data-lang="en">Dough</li>
+    <li data-lang="es">Manteca</li>
+    <li data-lang="en">Lard</li>
+    <li data-lang="es">2 usos de elote</li>
+    <li data-lang="en">2 uses of corn</li>
+ 
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -40</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 360</li>
+    <li>Carbs: 50</li>
+    <li>Lipids: 10</li>
+    <li>Proteins: 9</li>
+  </ul>
+</section>
+
+<section class="card" data-book="tamales">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/TamalCarne.png" alt="Tamal Carne" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Tamal Carne</h2>
+  <h2 data-lang="en">Tamal Carne</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> Cómo hacer tamales</p>
+  <p data-lang="en"><strong>Book:</strong> How to Make Tamales</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Masa</li>
+    <li data-lang="en">Dough</li>
+    <li data-lang="es">Manteca</li>
+    <li data-lang="en">Lard</li>
+    <li data-lang="es">2 usos de carne</li>
+    <li data-lang="en">2 uses of beef</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -45</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 410</li>
+    <li>Carbs: 40</li>
+    <li>Lipids: 22</li>
+    <li>Proteins: 18</li>
+  </ul>
+</section>
+
+<section class="card" data-book="mary">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/CarneChile.gif" alt="Carne con Chile" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Carne con chile</h2>
+  <h2 data-lang="en">Chilli con carne</h2>
+  </div>
+
+  <p data-lang="es"><strong>Libro:</strong> La receta secreta de Mary</p>
+  <p data-lang="en"><strong>Book:</strong> Mary's Secret Recipe</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">2 carnes</li>
+    <li data-lang="en">2 beef</li>
+    <li data-lang="es">2 tomates</li>
+    <li data-lang="en">2 tomatoes</li>
+    <li data-lang="es">2 usos de cebolla</li>
+    <li data-lang="en">2 uses of onion</li>
+    <li data-lang="es">1 chilli enlatado</li>
+    <li data-lang="en">1 canned chilli</li>
+    <li data-lang="es">Ajo</li>
+    <li data-lang="en">Garlic</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Cacerola</li>
+    <li data-lang="en">Saucepan</li>
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -50</li>
+    <li>Unhappy: -18</li>
+    <li>Calories: 410</li>
+    <li>Carbs: 460</li>
+    <li>Lipids: 28</li>
+    <li>Proteins: 40</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/ArrozLeche.gif" alt="Arroz con leche" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Arroz con leche</h2>
+  <h2 data-lang="en">Rice Pudding</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">2 usos de arroz</li>
+    <li data-lang="en">2 uses of rice</li>
+    <li data-lang="es">2 usos de azúcar</li>
+    <li data-lang="en">2 uses of sugar</li>
+    <li data-lang="es">Canela</li>
+    <li data-lang="en">Cinnamon</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Cacerola con leche</li>
+    <li data-lang="en">Saucepan with milk</li>
+   
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -35</li>
+    <li>Unhappy: -20</li>
+    <li>Calories: 330</li>
+    <li>Carbs: 55</li>
+    <li>Lipids: 7</li>
+    <li>Proteins: 7</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Bunuelos.png" alt="Buñuelos" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Buñuelos</h2>
+  <h2 data-lang="en">Bunuelos</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">Canela</li>
+    <li data-lang="en">Cinnamon</li>
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Sartén</li>
+    <li data-lang="en">Pan</li>
+   
+
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -25</li>
+    <li>Unhappy: -25</li>
+    <li>Calories: 280</li>
+    <li>Carbs: 45</li>
+    <li>Lipids: 12</li>
+    <li>Proteins: 4</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/PanMuerto.png" alt="Pan de Muerto" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Pan de Muerto</h2>
+  <h2 data-lang="en">Bread of the Dead</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">Mantequilla</li>
+    <li data-lang="en">Butter</li>
+    <li data-lang="es">Levadura</li>
+    <li data-lang="en">Yeast</li>
+    <li data-lang="es">2 huevos</li>
+    <li data-lang="en">2 eggs</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -30</li>
+    <li>Unhappy: -30</li>
+    <li>Calories: 400</li>
+    <li>Carbs: 60</li>
+    <li>Lipids: 15</li>
+    <li>Proteins: 10</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Capirotada.png" alt="Capirotada" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Capirotada</h2>
+  <h2 data-lang="en">Capirotada</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Plátano</li>
+    <li data-lang="en">Banana</li>
+    <li data-lang="es">Pan</li>
+    <li data-lang="en">Bread</li>
+    <li data-lang="es">Queso</li>
+    <li data-lang="en">Cheese</li>
+    <li data-lang="es">Piloncillo</li>
+    <li data-lang="en">Raw cane sugar</li>
+    <li data-lang="es">Sartén para hornear</li>
+    <li data-lang="en">Baking pan</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -30</li>
+    <li>Unhappy: -25</li>
+    <li>Calories: 380</li>
+    <li>Carbs: 55</li>
+    <li>Lipids: 12</li>
+    <li>Proteins: 10</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/PanDulce.png" alt="Pan Dulce" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Pan Dulce</h2>
+  <h2 data-lang="en">Sweet Bread</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">Mantequilla</li>
+    <li data-lang="en">Butter</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -25</li>
+    <li>Unhappy: -15</li>
+    <li>Calories: 350</li>
+    <li>Carbs: 50</li>
+    <li>Lipids: 12</li>
+    <li>Proteins: 7</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/PanNata.png" alt="Pan de nata" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Pan de nata</h2>
+  <h2 data-lang="en">Cream Bread</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+    <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">2 huevos</li>
+    <li data-lang="en">2 eggs</li>
+    <li data-lang="es">Extracto de vainilla</li>
+    <li data-lang="en">Vanilla extract</li>
+    <li data-lang="es">Crema</li>
+    <li data-lang="en">Cream</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -25</li>
+    <li>Unhappy: -22</li>
+    <li>Calories: 290</li>
+    <li>Carbs: 40</li>
+    <li>Lipids: 12</li>
+    <li>Proteins: 6</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Flan.png" alt="Flan Napolitano" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Flan Napolitano</h2>
+  <h2 data-lang="en">Neapolitan Flan</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+   
+    <li data-lang="es">Caramelos</li>
+    <li data-lang="en">Candy caramels</li>
+    <li data-lang="es">Leche enlatada</li>
+    <li data-lang="en">Canned milk</li>
+    <li data-lang="es">2 huevos</li>
+    <li data-lang="en">2 eggs</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -20</li>
+    <li>Unhappy: -15</li>
+    <li>Calories: 290</li>
+    <li>Carbs: 35</li>
+    <li>Lipids: 10</li>
+    <li>Proteins: 8</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Coyotas.png" alt="Coyotas" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Coyotas</h2>
+  <h2 data-lang="en">Coyotas</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+
+    <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">Mantequilla</li>
+    <li data-lang="en">Butter</li>
+    <li data-lang="es">Sal</li>
+    <li data-lang="en">Salt</li>
+    <li data-lang="es">Piloncillo</li>
+    <li data-lang="en">raw cane sugar</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Bol</li>
+    <li data-lang="en">Bowl</li>
+    <li data-lang="es">Rodillo para amasar</li>
+    <li data-lang="en">Rolling pin</li>
+    <li data-lang="es">Agua</li>
+    <li data-lang="en">Water</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -25</li>
+    <li>Unhappy: -12</li>
+    <li>Calories: 350</li>
+    <li>Carbs: 58</li>
+    <li>Lipids: 10</li>
+    <li>Proteins: 5</li>
+  </ul>
+</section>
+
+<section class="card" data-book="dulces">
+  <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="icons/Churros.png" alt="Churros" style="width: 40px; height: auto; margin-right: 15px;"> 
+  <h2 data-lang="es">Churros</h2>
+  <h2 data-lang="en">Churros</h2>
+  </div>
+
+  <p data-lang="en"><strong>Libro:</strong> Mexican Desserts</p>
+  <p data-lang="es"><strong>Book:</strong> Postres mexicanos</p>
+
+  <h3 data-lang="es">Ingredientes</h3>
+  <h3 data-lang="en">Ingredients</h3>
+  <ul>
+   
+     <li data-lang="es">Harina</li>
+    <li data-lang="en">Flour</li>
+    <li data-lang="es">Azúcar</li>
+    <li data-lang="en">Sugar</li>
+    <li data-lang="es">Mantequilla</li>
+    <li data-lang="en">Butter</li>
+    <li data-lang="es">Aceite</li>
+    <li data-lang="en">Oil</li>
+    <li data-lang="es">Agua</li>
+    <li data-lang="en">Water</li>
+    <li data-lang="es">Utensilio para mezclar</li>
+    <li data-lang="en">Mixing utensil</li>
+    <li data-lang="es">Olla</li>
+    <li data-lang="en">Pot</li>
+  </ul>
+
+  <h3 data-lang="es">Valores</h3>
+  <h3 data-lang="en">Values</h3>
+  <ul class="stats">
+    <li>Hunger: -15</li>
+    <li>Unhappy: -10</li>
+    <li>Calories: 210</li>
+    <li>Carbs: 22</li>
+    <li>Lipids: 12</li>
+    <li>Proteins: 3</li>
+  </ul>
+</section>
+  
+</main>
+
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll("[data-lang]").forEach(el => {
+    el.hidden = el.getAttribute("data-lang") !== lang;
+  });
+
+  localStorage.setItem("wikiLang", lang);
+}
+
+const savedLang = localStorage.getItem("wikiLang") || "es";
+setLanguage(savedLang);
+</script>
+
+<script>
+function filterByBook() {
+  const selected = document.getElementById("bookFilter").value;
+
+  document.querySelectorAll(".card[data-book]").forEach(card => {
+    if (selected === "all" || card.dataset.book === selected) {
+      card.hidden = false;
+    } else {
+      card.hidden = true;
+    }
+  });
+}
+</script>
+
+</body>
+</html>
